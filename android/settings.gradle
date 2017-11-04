@@ -1,0 +1,3 @@
+rootProject.name = 'DrillDo'
+
+include ':app'

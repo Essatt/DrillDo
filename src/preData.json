@@ -1,0 +1,31 @@
+{
+  P1: {
+    name: 'Renovizations',
+    color: 'yellow',
+    symbol: 'R',
+    Tasks: {
+      T1: {
+        text: 'Do stuff',
+        dependencies: '{ "T2", "T5" }',
+        status: 'Active'
+      }
+    }
+  },
+  P2: {
+    name: 'Chores',
+    color: 'green',
+    symbol: 'C',
+    Tasks: {
+      T1: {
+        text: 'Do more stuff',
+        dependencies: '{ "T2", "T5"}',
+        status: 'Active'
+      },
+      T2: {
+        text: 'yooo',
+        dependencies: "{ 'T1'}",
+        status: 'Pending'
+      }
+    }
+  }
+}
